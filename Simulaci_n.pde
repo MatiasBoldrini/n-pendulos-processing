@@ -7,7 +7,7 @@ pendulum[] pendulums = new pendulum[100];
 float[] posX = new float[101];
 float[] posY = new float[101];
 void setup() {
-    ws = new WebsocketServer(this,8025,"/john");
+    ws = new WebSocketClient(this, "ws://localhost:8025/john"); // Reemplaza la URL con la dirección del servidor WebSocket al que te quieres conectar
     fullScreen();
     posX[0] = 0;
     posY[0] = 0;
