@@ -32,7 +32,7 @@ void draw() {
         	posY[i+ 1] = posY[i] + pendulums[i].posY();
         }
     if (millis()>now + 1000) {
-        ws.sendMessage("Calcular()");
+        ws.sendMessage("Envio desde processing");
         now = millis();
 	}
     	pendulums[0].posAngle += pendulums[0].vel;
